@@ -61,7 +61,7 @@ export function Footer() {
               <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500 shadow-lg">
                 <Crown className="h-6 w-6 text-white" />
               </div>
-              <span className="text-2xl font-bold text-white">FashionLux</span>
+              <span className="text-2xl font-bold text-white">scenewear</span>
             </div>
             <p className="text-white mb-6 leading-relaxed">
               Redefining luxury fashion with cutting-edge designs and uncompromising quality. Your gateway to exclusive
@@ -228,7 +228,7 @@ export function Footer() {
                 </div>
                 <div>
                   <p className="text-white font-medium">Flagship Store</p>
-                  <p className="text-white text-sm">Fifth Avenue, New York</p>
+                  <p className="text-white text-sm">Avenue Habib Bourguiba, Tunis</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
@@ -237,7 +237,7 @@ export function Footer() {
                 </div>
                 <div>
                   <p className="text-white font-medium">VIP Hotline</p>
-                  <p className="text-white text-sm">+1 (555) 123-LUXE</p>
+                  <p className="text-white text-sm">+216 71 123 456</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
@@ -246,7 +246,7 @@ export function Footer() {
                 </div>
                 <div>
                   <p className="text-white font-medium">Concierge</p>
-                  <p className="text-white text-sm">concierge@fashionlux.com</p>
+                  <p className="text-white text-sm">contact@scenewear.tn</p>
                 </div>
               </div>
             </div>
@@ -259,7 +259,7 @@ export function Footer() {
         <div className="flex flex-col lg:flex-row justify-between items-center">
           <div className="flex items-center space-x-4 mb-6 lg:mb-0">
             <Award className="h-5 w-5 text-yellow-400" />
-            <p className="text-white text-sm">© 2025 FashionLux. Luxury Redefined. All rights reserved.</p>
+            <p className="text-white text-sm">© 2025 scenewear. Elevate Your Scene. All rights reserved.</p>
           </div>
           <div className="flex flex-wrap justify-center lg:justify-end space-x-8">
             <a href="#" className="text-white hover:text-violet-400 text-sm transition-colors">

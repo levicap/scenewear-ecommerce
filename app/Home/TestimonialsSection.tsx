@@ -5,69 +5,69 @@ import { Star, Quote, Verified, Heart, ShoppingBag, Crown } from "lucide-react";
 const testimonials = [
   {
     id: 1,
-    name: "Isabella Rodriguez",
+    name: "Yosra Ben Ali",
     role: "Fashion Influencer",
     avatar: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150",
     rating: 5,
     content: "FashionLux has completely transformed my wardrobe. The quality is unmatched, and every piece feels like it was made just for me. Their attention to detail is extraordinary.",
     verified: true,
     purchases: 24,
-    location: "New York, NY"
+  location: "Tunis, Tunisie"
   },
   {
     id: 2,
-    name: "Marcus Chen",
+    name: "Karim Bouaziz",
     role: "CEO & Style Enthusiast",
     avatar: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150",
     rating: 5,
     content: "As someone who values both style and substance, FashionLux delivers on every front. Their executive collection is perfect for the modern professional who refuses to compromise.",
     verified: true,
     purchases: 18,
-    location: "San Francisco, CA"
+  location: "Sfax, Tunisie"
   },
   {
     id: 3,
-    name: "Sophia Williams",
+    name: "Amal Cherif",
     role: "Creative Director",
     avatar: "https://images.pexels.com/photos/1462637/pexels-photo-1462637.jpeg?auto=compress&cs=tinysrgb&w=150",
     rating: 5,
     content: "The avant-garde collection speaks to my soul. Each piece is a work of art that pushes boundaries while maintaining elegance. FashionLux understands true luxury.",
     verified: true,
     purchases: 31,
-    location: "London, UK"
+  location: "Sousse, Tunisie"
   },
   {
     id: 4,
-    name: "David Thompson",
+    name: "Mehdi Trifi",
     role: "Fashion Photographer",
     avatar: "https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=150",
     rating: 5,
     content: "Working in fashion, I see countless brands, but FashionLux stands apart. The craftsmanship, the vision, the execution - everything is flawless. My go-to for premium pieces.",
     verified: true,
     purchases: 15,
-    location: "Milan, Italy"
+  location: "Bizerte, Tunisie"
   },
   {
     id: 5,
-    name: "Emma Johnson",
+    name: "Fatma Gharsallah",
     role: "Luxury Lifestyle Blogger",
     avatar: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150",
     rating: 5,
     content: "FashionLux isn't just clothing - it's an experience. From the moment you browse their collection to wearing their pieces, everything exudes luxury and sophistication.",
     verified: true,
     purchases: 27,
-    location: "Paris, France"
+  location: "Gabès, Tunisie"
   },
   {
     id: 6,
-    name: "Alexander Kim",
+    name: "Houssem Rebai",
     role: "Investment Banker",
     avatar: "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=150",
     rating: 5,
     content: "Quality that justifies the investment. Every piece from FashionLux has become a staple in my wardrobe. The customer service is exceptional, and the fit is always perfect.",
     verified: true,
     purchases: 22,
-    location: "Tokyo, Japan"
+  location: "Monastir, Tunisie"
   }
 ];
 
@@ -87,7 +87,7 @@ export function TestimonialsSection() {
             </span>
           </h2>
           <p className="text-xl text-zinc-400 max-w-3xl mx-auto leading-relaxed">
-            Join thousands of satisfied customers who have elevated their style with FashionLux
+            Rejoignez des milliers de clients tunisiens qui ont élevé leur style avec scenewear
           </p>
         </div>
         

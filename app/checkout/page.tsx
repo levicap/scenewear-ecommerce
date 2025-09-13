@@ -40,12 +40,12 @@ const cartItems = [
   {
     id: 1,
     name: "Ethereal Moonlight Gown",
-    price: 2899.99,
-    originalPrice: 3499.99,
+    price: 8999,
+    originalPrice: 10999,
     quantity: 1,
     size: "M",
     color: "Midnight Obsidian",
-    image: "/placeholder.svg?height=150&width=120",
+    image: "https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&fit=crop&w=100&h=125&q=80",
     designer: "Atelier Lumière",
     rarity: "Ultra Rare",
     isExclusive: true,
@@ -53,11 +53,11 @@ const cartItems = [
   {
     id: 2,
     name: "Minimalist Zen Silhouette",
-    price: 1799.99,
+    price: 5499,
     quantity: 1,
     size: "S",
     color: "Pearl Luminescence",
-    image: "/placeholder.svg?height=150&width=120",
+    image: "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=100&h=125&q=80",
     designer: "Serene Studios",
     rarity: "Premium",
     isExclusive: false,
@@ -247,12 +247,12 @@ export default function CheckoutPage() {
                   <div className="space-y-3">
                     <Label htmlFor="phone" className="text-white flex items-center gap-2 text-lg">
                       <Phone className="h-5 w-5 text-purple-400" />
-                      Phone Number
+                      رقم الهاتف
                     </Label>
                     <Input
                       id="phone"
                       type="tel"
-                      placeholder="+1 (555) 123-4567"
+                      placeholder="+216 71 123 456"
                       className="bg-gray-900/50 border-gray-700/50 text-white placeholder-gray-400 h-14 text-lg rounded-xl focus:border-purple-500/50 transition-all duration-300"
                     />
                   </div>
@@ -260,11 +260,11 @@ export default function CheckoutPage() {
                   <div className="space-y-3">
                     <Label htmlFor="address" className="text-white flex items-center gap-2 text-lg">
                       <MapPin className="h-5 w-5 text-purple-400" />
-                      Street Address
+                      عنوان الشارع
                     </Label>
                     <Input
                       id="address"
-                      placeholder="123 Fashion Avenue"
+                      placeholder="شارع الحبيب بورقيبة 123"
                       className="bg-gray-900/50 border-gray-700/50 text-white placeholder-gray-400 h-14 text-lg rounded-xl focus:border-purple-500/50 transition-all duration-300"
                     />
                   </div>
@@ -272,37 +272,37 @@ export default function CheckoutPage() {
                   <div className="grid md:grid-cols-3 gap-6">
                     <div className="space-y-3">
                       <Label htmlFor="city" className="text-white text-lg">
-                        City
+                        المدينة
                       </Label>
                       <Input
                         id="city"
-                        placeholder="New York"
+                        placeholder="تونس"
                         className="bg-gray-900/50 border-gray-700/50 text-white placeholder-gray-400 h-14 text-lg rounded-xl focus:border-purple-500/50 transition-all duration-300"
                       />
                     </div>
                     <div className="space-y-3">
                       <Label htmlFor="state" className="text-white text-lg">
-                        State
+                        الولاية
                       </Label>
                       <Select>
                         <SelectTrigger className="bg-gray-900/50 border-gray-700/50 text-white h-14 text-lg rounded-xl">
-                          <SelectValue placeholder="Select state" />
+                          <SelectValue placeholder="اختر الولاية" />
                         </SelectTrigger>
                         <SelectContent className="bg-gray-900 border-gray-700 backdrop-blur-xl">
-                          <SelectItem value="ny">New York</SelectItem>
-                          <SelectItem value="ca">California</SelectItem>
-                          <SelectItem value="tx">Texas</SelectItem>
-                          <SelectItem value="fl">Florida</SelectItem>
+                          <SelectItem value="tunis">تونس</SelectItem>
+                          <SelectItem value="sfax">صفاقس</SelectItem>
+                          <SelectItem value="sousse">سوسة</SelectItem>
+                          <SelectItem value="nabeul">نابل</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
                     <div className="space-y-3">
                       <Label htmlFor="zip" className="text-white text-lg">
-                        ZIP Code
+                        الرمز البريدي
                       </Label>
                       <Input
                         id="zip"
-                        placeholder="10001"
+                        placeholder="1001"
                         className="bg-gray-900/50 border-gray-700/50 text-white placeholder-gray-400 h-14 text-lg rounded-xl focus:border-purple-500/50 transition-all duration-300"
                       />
                     </div>
@@ -466,7 +466,7 @@ export default function CheckoutPage() {
                         </Label>
                         <Input
                           id="cardName"
-                          placeholder="John Doe"
+                          placeholder="كريم بن صالح"
                           className="bg-gray-900/50 border-gray-700/50 text-white placeholder-gray-400 h-14 text-lg rounded-xl focus:border-purple-500/50 transition-all duration-300"
                         />
                       </div>
@@ -586,11 +586,11 @@ export default function CheckoutPage() {
                             </p>
                             <div className="flex items-center gap-3">
                               <span className="text-xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                                ${item.price.toLocaleString()}
+                                {item.price.toLocaleString()} TND
                               </span>
                               {item.originalPrice && (
                                 <span className="text-sm text-gray-500 line-through">
-                                  ${item.originalPrice.toLocaleString()}
+                                  {item.originalPrice.toLocaleString()} TND
                                 </span>
                               )}
                             </div>
@@ -605,12 +605,12 @@ export default function CheckoutPage() {
                     <div className="space-y-4">
                       <div className="flex justify-between text-gray-300 text-lg">
                         <span>Subtotal</span>
-                        <span>${subtotal.toLocaleString()}</span>
+                        <span>{subtotal.toLocaleString()} TND</span>
                       </div>
                       {savings > 0 && (
                         <div className="flex justify-between text-green-400 text-lg">
                           <span>You Save</span>
-                          <span>-${savings.toLocaleString()}</span>
+                          <span>-{savings.toLocaleString()} TND</span>
                         </div>
                       )}
                       <div className="flex justify-between text-gray-300 text-lg">
@@ -619,19 +619,19 @@ export default function CheckoutPage() {
                           {shipping === 0 ? (
                             <span className="text-green-400 font-semibold">FREE</span>
                           ) : (
-                            `$${shipping.toFixed(2)}`
+                            `${shipping.toLocaleString()} TND`
                           )}
                         </span>
                       </div>
                       <div className="flex justify-between text-gray-300 text-lg">
                         <span>Tax</span>
-                        <span>${tax.toFixed(2)}</span>
+                        <span>{tax.toLocaleString()} TND</span>
                       </div>
                       <Separator className="bg-gray-700/50" />
                       <div className="flex justify-between text-2xl font-bold text-white">
                         <span>Total</span>
                         <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                          ${total.toLocaleString()}
+                          {total.toLocaleString()} TND
                         </span>
                       </div>
                     </div>

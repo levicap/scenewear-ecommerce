@@ -66,7 +66,7 @@ export function PromotionsSection() {
                 <Truck className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">Express Delivery</h3>
-              <p className="text-zinc-400 leading-relaxed">Free same-day delivery on orders over $200. Premium packaging included.</p>
+              <p className="text-zinc-400 leading-relaxed">Livraison gratuite le jour même pour les commandes de plus de 600 TND. Emballage premium inclus.</p>
             </CardContent>
           </Card>
           

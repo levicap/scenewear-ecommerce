@@ -28,77 +28,77 @@ import Image from "next/image"
 const trackingData = {
   orderNumber: "LX-2024-001247",
   status: "In Transit",
-  estimatedDelivery: "January 28, 2024",
-  currentLocation: "Distribution Center - Chicago, IL",
+  estimatedDelivery: "28 جانفي 2024",
+  currentLocation: "مركز التوزيع - تونس",
   carrier: "FashionLux Express",
   trackingNumber: "FLX789456123",
   timeline: [
     {
-      status: "Order Confirmed",
-      date: "Jan 21, 2024",
-      time: "2:30 PM",
-      location: "New York, NY",
+      status: "تم تأكيد الطلب",
+      date: "21 جانفي 2024",
+      time: "2:30 مساءً",
+      location: "تونس",
       completed: true,
-      description: "Your order has been confirmed and payment processed",
+      description: "تم تأكيد طلبك ومعالجة الدفع",
     },
     {
-      status: "Processing",
-      date: "Jan 21, 2024",
-      time: "4:15 PM",
-      location: "Fulfillment Center - NY",
+      status: "قيد المعالجة",
+      date: "21 جانفي 2024",
+      time: "4:15 مساءً",
+      location: "مركز الوفاء - تونس",
       completed: true,
-      description: "Items are being prepared and quality checked",
+      description: "يتم تحضير القطع والتحقق من الجودة",
     },
     {
-      status: "Shipped",
-      date: "Jan 22, 2024",
-      time: "9:00 AM",
-      location: "New York, NY",
+      status: "تم الشحن",
+      date: "22 جانفي 2024",
+      time: "9:00 صباحاً",
+      location: "تونس",
       completed: true,
-      description: "Package has left our facility and is on its way",
+      description: "غادرت الطرزة منشأتنا وفي الطريق",
     },
     {
-      status: "In Transit",
-      date: "Jan 24, 2024",
-      time: "11:30 AM",
-      location: "Chicago, IL",
+      status: "في الطريق",
+      date: "24 جانفي 2024",
+      time: "11:30 صباحاً",
+      location: "تونس",
       completed: true,
       current: true,
-      description: "Package is moving through our network",
+      description: "الطرزة تتحرك عبر شبكتنا",
     },
     {
-      status: "Out for Delivery",
-      date: "Jan 28, 2024",
-      time: "Expected",
-      location: "Your City",
+      status: "خارج للتوصيل",
+      date: "28 جانفي 2024",
+      time: "متوقع",
+      location: "مدينتك",
       completed: false,
-      description: "Package will be delivered today",
+      description: "سيتم توصيل الطرز اليوم",
     },
     {
-      status: "Delivered",
-      date: "Jan 28, 2024",
-      time: "Expected",
-      location: "123 Fashion Avenue",
+      status: "تم التوصيل",
+      date: "28 جانفي 2024",
+      time: "متوقع",
+      location: "شارع الحبيب بورقيبة 123",
       completed: false,
-      description: "Package delivered to your address",
+      description: "تم توصيل الطرز إلى عنوانك",
     },
   ],
   items: [
     {
       id: 1,
-      name: "Ethereal Silk Evening Dress",
+      name: "فستان معمق من الحرير الاتريال",
       price: 299.99,
       quantity: 1,
-      image: "/placeholder.svg?height=120&width=100",
-      designer: "Atelier Lumière",
+      image: "https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&fit=crop&w=80&h=100&q=80",
+      designer: "тельيه نور",
     },
     {
       id: 2,
-      name: "Minimalist Chic Midi",
+      name: "فستان ميدي مينماليستي",
       price: 179.99,
       quantity: 1,
-      image: "/placeholder.svg?height=120&width=100",
-      designer: "Serene Studios",
+      image: "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=80&h=100&q=80",
+      designer: "ستيرن ستوديو",
     },
   ],
 }
@@ -407,15 +407,15 @@ export default function OrderTrackingPage() {
                   <div className="flex items-center gap-3">
                     <Phone className="h-4 w-4 text-blue-400" />
                     <div>
-                      <p className="text-white font-medium">Call Support</p>
-                      <p className="text-gray-400">+1 (555) 123-LUXE</p>
+                      <p className="text-white font-medium">اتصل بالدعم</p>
+                      <p className="text-gray-400">+216 71 123 456</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
                     <Mail className="h-4 w-4 text-green-400" />
                     <div>
-                      <p className="text-white font-medium">Email Support</p>
-                      <p className="text-gray-400">support@fashionlux.com</p>
+                      <p className="text-white font-medium">بريد الدعم</p>
+                      <p className="text-gray-400">support@scenewear.tn</p>
                     </div>
                   </div>
                 </div>

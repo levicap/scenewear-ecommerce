@@ -30,34 +30,34 @@ const cartItems = [
   {
     id: 1,
     name: "Ethereal Moonlight Gown",
-    price: 2899.99,
-    originalPrice: 3499.99,
+    price: 8999,
+    originalPrice: 10999,
     quantity: 1,
     size: "M",
     color: "Midnight Obsidian",
-    image: "/images/cart/ethereal-moonlight-thumb.png",
+    image: "https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&fit=crop&w=100&h=120&q=80",
     designer: "Atelier Lumière",
     rarity: "Ultra Rare",
   },
   {
     id: 2,
     name: "Minimalist Zen Silhouette",
-    price: 1799.99,
+    price: 5499,
     quantity: 2,
     size: "S",
     color: "Pearl Luminescence",
-    image: "/images/cart/minimalist-zen-thumb.png",
+    image: "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=100&h=120&q=80",
     designer: "Serene Studios",
     rarity: "Premium",
   },
   {
     id: 3,
     name: "Neo-Gothic Cathedral Dress",
-    price: 3899.99,
+    price: 11999,
     quantity: 1,
     size: "L",
     color: "Raven Black",
-    image: "/images/cart/neo-gothic-thumb.png",
+    image: "https://images.unsplash.com/photo-1591369822091-8b550f27d4d3?auto=format&fit=crop&w=100&h=120&q=80",
     designer: "Gothic Renaissance",
     rarity: "Exclusive",
   },
@@ -68,16 +68,16 @@ const wishlistItems = [
   {
     id: 1,
     name: "Celestial Evening Gown",
-    price: 3299.99,
-    image: "/images/products/celestial-evening-gown.png",
+    price: 9999,
+    image: "https://images.unsplash.com/photo-1536104968055-4d61aa56f46a?auto=format&fit=crop&w=100&h=120&q=80",
     designer: "Stellar Couture",
     rarity: "Ultra Rare",
   },
   {
     id: 2,
     name: "Vintage Romance Dress",
-    price: 2199.99,
-    image: "/images/products/vintage-romance-dress.png",
+    price: 6499,
+    image: "https://images.unsplash.com/photo-1572804013305-535a3d5be02a?auto=format&fit=crop&w=100&h=120&q=80",
     designer: "Timeless Elegance",
     rarity: "Exclusive",
   },
@@ -238,11 +238,11 @@ export function Header() {
 
                       <div className="flex items-center gap-2">
                         <span className="font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                          ${item.price.toLocaleString()}
+                          {item.price.toLocaleString()} TND
                         </span>
                         {item.originalPrice && (
                           <span className="text-xs text-gray-500 line-through">
-                            ${item.originalPrice.toLocaleString()}
+                            {item.originalPrice.toLocaleString()} TND
                           </span>
                         )}
                       </div>
@@ -288,7 +288,7 @@ export function Header() {
               <div className="flex justify-between text-lg">
                 <span className="text-gray-300">Subtotal</span>
                 <span className="font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                  ${subtotal.toLocaleString()}
+                  {subtotal.toLocaleString()} TND
                 </span>
               </div>
 
@@ -384,7 +384,7 @@ export function Header() {
 
                     <div className="flex items-center gap-2">
                       <span className="font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                        ${item.price.toLocaleString()}
+                        {item.price.toLocaleString()} TND
                       </span>
                     </div>
 
@@ -507,9 +507,9 @@ export function Header() {
                       // Navigate to action URL
                     }}
                   >
-                    <div className="flex gap-4">
-                      <div className={`p-2 rounded-lg bg-gray-800 ${getIconColor()}`}>{getIcon()}</div>
-                      <div className="flex-1 space-y-1">
+                    <div className="flex gap-10">
+                      <div className={`pt-5 pl-0 rounded-lg bg-gray-800 ${getIconColor()}`}>{getIcon()}</div>
+                      <div className="flex-1 space-y-0">
                         <div className="flex items-start justify-between">
                           <h4 className="font-bold text-white text-sm">{notification.title}</h4>
                           {!notification.read && <div className="w-2 h-2 bg-blue-500 rounded-full mt-1" />}
@@ -628,7 +628,7 @@ SceneWear            </span>
                 {unreadCount > 0 && (
                   <Badge
                     variant="destructive"
-                    className="absolute -top-1 -right-1 h-4 w-4 rounded-full p-0 flex items-center justify-center text-xs bg-gradient-to-r from-blue-500 to-cyan-500 animate-pulse"
+                    className="absolute -top-1 -right-1 h-5 w-5 rounded-full p-0 flex items-center justify-center text-xs bg-gradient-to-r from-blue-500 to-cyan-500 animate-pulse"
                   >
                     {unreadCount}
                   </Badge>

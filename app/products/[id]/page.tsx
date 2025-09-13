@@ -43,61 +43,61 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Progress } from "@/components/ui/progress"
 
 const productImages = [
-  "/placeholder.svg?height=800&width=600",
-  "/placeholder.svg?height=800&width=600",
-  "/placeholder.svg?height=800&width=600",
-  "/placeholder.svg?height=800&width=600",
-  "/placeholder.svg?height=800&width=600",
-  "/placeholder.svg?height=800&width=600",
+  "https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&fit=crop&w=600&h=800&q=80",
+  "https://images.unsplash.com/photo-1591369822091-8b550f27d4d3?auto=format&fit=crop&w=600&h=800&q=80",
+  "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=600&h=800&q=80",
+  "https://images.unsplash.com/photo-1572804013305-535a3d5be02a?auto=format&fit=crop&w=600&h=800&q=80",
+  "https://images.unsplash.com/photo-1536104968055-4d61aa56f46a?auto=format&fit=crop&w=600&h=800&q=80",
+  "https://images.unsplash.com/photo-1543076447-215ad9ba6923?auto=format&fit=crop&w=600&h=800&q=80",
 ]
 
 const relatedProducts = [
   {
     id: 2,
-    name: "Avant-Garde Sculptural Dress",
-    price: 4299.99,
-    image: "/placeholder.svg?height=400&width=300",
-    rating: 4.8,
-    isExclusive: true,
-    designer: "Neo Couture",
-    rarity: "Exclusive",
+  name: "Robe Carthage Dorée",
+  price: 13900,
+  image: "https://images.unsplash.com/photo-1572804013305-535a3d5be02a?auto=format&fit=crop&w=300&h=400&q=80",
+  rating: 4.8,
+  isExclusive: true,
+  designer: "Atelier Tunis",
+  rarity: "Exclusive",
   },
   {
     id: 3,
-    name: "Minimalist Zen Silhouette",
-    price: 1799.99,
-    image: "/placeholder.svg?height=400&width=300",
-    rating: 4.7,
-    isExclusive: false,
-    designer: "Serene Studios",
-    rarity: "Premium",
+  name: "Caftan Sidi Bou Said",
+  price: 5800,
+  image: "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=300&h=400&q=80",
+  rating: 4.7,
+  isExclusive: false,
+  designer: "Maison Sidi Bou",
+  rarity: "Premium",
   },
   {
     id: 4,
-    name: "Deconstructed Power Dress",
-    price: 2299.99,
-    image: "/placeholder.svg?height=400&width=300",
-    rating: 4.6,
-    isExclusive: false,
-    designer: "Urban Rebellion",
-    rarity: "Limited",
+  name: "Jebba Kairouan",
+  price: 7400,
+  image: "https://images.unsplash.com/photo-1543076447-215ad9ba6923?auto=format&fit=crop&w=300&h=400&q=80",
+  rating: 4.6,
+  isExclusive: false,
+  designer: "Kairouan Couture",
+  rarity: "Limited",
   },
   {
     id: 5,
-    name: "Neo-Gothic Cathedral Dress",
-    price: 3899.99,
-    image: "/placeholder.svg?height=400&width=300",
-    rating: 4.8,
-    isExclusive: true,
-    designer: "Gothic Renaissance",
-    rarity: "Ultra Rare",
+  name: "Faracha du Sahara",
+  price: 12500,
+  image: "https://images.unsplash.com/photo-1591369822091-8b550f27d4d3?auto=format&fit=crop&w=300&h=400&q=80",
+  rating: 4.8,
+  isExclusive: true,
+  designer: "Sahara Luxe",
+  rarity: "Ultra Rare",
   },
 ]
 
 const reviews = [
   {
     id: 1,
-    name: "Isabella Rosewood",
+    name: "Yosra Ben Ali",
     avatar: "/placeholder.svg?height=50&width=50",
     rating: 5,
     date: "2024-01-20",
@@ -109,7 +109,7 @@ const reviews = [
   },
   {
     id: 2,
-    name: "Sophia Chen-Laurent",
+    name: "Karim Bouaziz",
     avatar: "/placeholder.svg?height=50&width=50",
     rating: 5,
     date: "2024-01-15",
@@ -121,7 +121,7 @@ const reviews = [
   },
   {
     id: 3,
-    name: "Emma Blackwood",
+    name: "Amal Cherif",
     avatar: "/placeholder.svg?height=50&width=50",
     rating: 5,
     date: "2024-01-10",
@@ -293,13 +293,13 @@ export default function ProductDetailPage() {
 
                 {/* Designer & Collection */}
                 <div className="space-y-2">
-                  <p className="text-purple-400 font-bold text-lg tracking-wider uppercase">Atelier Lumière</p>
-                  <p className="text-gray-400 text-sm tracking-wide">From the "Celestial Dreams" Collection</p>
+                  <p className="text-purple-400 font-bold text-lg tracking-wider uppercase">Atelier Tunis</p>
+                  <p className="text-gray-400 text-sm tracking-wide">De la collection "Rêves Tunisiens"</p>
                 </div>
 
                 {/* Product Name */}
                 <h1 className="text-5xl font-black bg-gradient-to-r from-white via-purple-200 to-pink-200 bg-clip-text text-transparent leading-tight">
-                  Ethereal Moonlight Gown
+                  Robe Tunisienne "Lumière du Jasmin"
                 </h1>
 
                 {/* Rating & Reviews */}
@@ -331,16 +331,15 @@ export default function ProductDetailPage() {
                 <div className="space-y-3">
                   <div className="flex items-center gap-4">
                     <span className="text-5xl font-black bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                      $2,899
+                      9,500 TND
                     </span>
-                    <span className="text-2xl text-gray-500 line-through">$3,499</span>
+                    <span className="text-2xl text-gray-500 line-through">11,500 TND</span>
                     <Badge className="bg-gradient-to-r from-red-500 to-pink-500 text-white text-lg px-4 py-2">
                       17% OFF
                     </Badge>
                   </div>
                   <p className="text-gray-400 text-sm">
-                    Or 4 interest-free payments of $724.75 with{" "}
-                    <span className="text-purple-400 font-semibold">Klarna</span>
+                    Ou 4 paiements sans frais de 2,375 TND avec <span className="text-purple-400 font-semibold">Klarna</span>
                   </p>
                 </div>
 
@@ -834,7 +833,7 @@ export default function ProductDetailPage() {
                       </div>
 
                       <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                        ${product.price.toLocaleString()}
+                        {product.price.toLocaleString()} TND
                       </div>
                     </div>
                   </CardContent>

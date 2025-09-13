@@ -48,11 +48,11 @@ export function Footer() {
                 <Crown className="h-6 w-6 text-white" />
               </div>
               <span className="text-2xl font-bold bg-gradient-to-r from-white to-zinc-400 bg-clip-text text-transparent">
-                FashionLux
+                scenewear
               </span>
             </div>
             <p className="text-zinc-400 mb-6 leading-relaxed">
-              Redefining luxury fashion with cutting-edge designs and uncompromising quality. Your gateway to exclusive style.
+              Elevate your style with scenewear – the platform for modern, exclusive, and trendsetting fashion.
             </p>
             <div className="flex space-x-4">
               <Button variant="ghost" size="icon" className="text-zinc-400 hover:text-white hover:bg-violet-600/20 rounded-xl border border-zinc-800 hover:border-violet-500/50">
@@ -114,8 +114,8 @@ export function Footer() {
                   <MapPin className="h-5 w-5 text-violet-400" />
                 </div>
                 <div>
-                  <p className="text-white font-medium">Flagship Store</p>
-                  <p className="text-zinc-400 text-sm">Fifth Avenue, New York</p>
+                  <p className="text-white font-medium">Boutique Centrale</p>
+                  <p className="text-zinc-400 text-sm">Avenue Habib Bourguiba, Tunis</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
@@ -123,8 +123,8 @@ export function Footer() {
                   <Phone className="h-5 w-5 text-blue-400" />
                 </div>
                 <div>
-                  <p className="text-white font-medium">VIP Hotline</p>
-                  <p className="text-zinc-400 text-sm">+1 (555) 123-LUXE</p>
+                  <p className="text-white font-medium">Contact</p>
+                  <p className="text-zinc-400 text-sm">+216 71 123 456</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
@@ -132,8 +132,8 @@ export function Footer() {
                   <Mail className="h-5 w-5 text-green-400" />
                 </div>
                 <div>
-                  <p className="text-white font-medium">Concierge</p>
-                  <p className="text-zinc-400 text-sm">concierge@fashionlux.com</p>
+                  <p className="text-white font-medium">Email</p>
+                  <p className="text-zinc-400 text-sm">contact@scenewear.tn</p>
                 </div>
               </div>
             </div>
@@ -147,7 +147,7 @@ export function Footer() {
           <div className="flex items-center space-x-4 mb-6 lg:mb-0">
             <Award className="h-5 w-5 text-yellow-400" />
             <p className="text-zinc-400 text-sm">
-              © 2025 FashionLux. Luxury Redefined. All rights reserved.
+              © 2025 scenewear. Elevate Your Scene. All rights reserved.
             </p>
           </div>
           <div className="flex flex-wrap justify-center lg:justify-end space-x-8">

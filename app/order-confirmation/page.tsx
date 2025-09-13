@@ -15,21 +15,21 @@ const orderItems = [
   {
     id: 1,
     name: "Ethereal Silk Evening Dress",
-    price: 299.99,
-    originalPrice: 399.99,
+    price: 2999,
+    originalPrice: 3999,
     quantity: 1,
     size: "M",
     color: "Midnight Black",
-    image: "/placeholder.svg?height=120&width=100",
+    image: "https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&fit=crop&w=100&h=120&q=80",
   },
   {
     id: 2,
     name: "Minimalist Chic Midi",
-    price: 179.99,
+    price: 1799,
     quantity: 1,
     size: "S",
     color: "Ivory",
-    image: "/placeholder.svg?height=120&width=100",
+    image: "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=100&h=120&q=80",
   },
 ]
 
@@ -38,17 +38,17 @@ const orderDetails = {
   orderDate: "January 21, 2024",
   estimatedDelivery: "January 28, 2024",
   shippingAddress: {
-    name: "Sarah Johnson",
+    name: "Salma Ben Ahmed",
     address: "123 Fashion Avenue",
-    city: "New York",
-    state: "NY",
-    zip: "10001",
+    city: "Tunis",
+    state: "Tunis",
+    zip: "1001",
   },
   paymentMethod: "•••• •••• •••• 4567",
-  subtotal: 479.98,
+  subtotal: 4798,
   shipping: 0,
-  tax: 38.4,
-  total: 518.38,
+  tax: 384,
+  total: 5182,
 }
 
 export default function OrderConfirmationPage() {
@@ -178,10 +178,10 @@ export default function OrderConfirmationPage() {
                         </p>
                         <div className="flex items-center gap-3">
                           <span className="text-xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                            ${item.price}
+                            {item.price.toLocaleString()} TND
                           </span>
                           {item.originalPrice && (
-                            <span className="text-gray-500 line-through">${item.originalPrice}</span>
+                            <span className="text-gray-500 line-through">{item.originalPrice.toLocaleString()} TND</span>
                           )}
                         </div>
                         <div className="flex gap-2 pt-2">
@@ -242,7 +242,7 @@ export default function OrderConfirmationPage() {
                 <div className="space-y-3">
                   <div className="flex justify-between text-gray-300">
                     <span>Subtotal</span>
-                    <span>${orderDetails.subtotal.toFixed(2)}</span>
+                    <span>{orderDetails.subtotal.toLocaleString()} TND</span>
                   </div>
                   <div className="flex justify-between text-gray-300">
                     <span>Shipping</span>
@@ -250,13 +250,13 @@ export default function OrderConfirmationPage() {
                   </div>
                   <div className="flex justify-between text-gray-300">
                     <span>Tax</span>
-                    <span>${orderDetails.tax.toFixed(2)}</span>
+                    <span>{orderDetails.tax.toLocaleString()} TND</span>
                   </div>
                   <Separator className="bg-gray-700" />
                   <div className="flex justify-between text-xl font-bold text-white">
                     <span>Total</span>
                     <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                      ${orderDetails.total.toFixed(2)}
+                      {orderDetails.total.toLocaleString()} TND
                     </span>
                   </div>
                 </div>

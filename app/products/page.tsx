@@ -43,11 +43,11 @@ const products = [
   {
     id: 1,
     name: "Ethereal Moonlight Gown",
-    price: 2899.99,
-    originalPrice: 3499.99,
+    price: 8999,
+    originalPrice: 10999,
     rating: 4.9,
     reviews: 247,
-    image: "/placeholder.svg?height=600&width=450",
+    image: "https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&fit=crop&w=600&h=800&q=80",
     colors: ["midnight", "pearl", "rose-gold"],
     sizes: ["XS", "S", "M", "L", "XL"],
     isNew: true,
@@ -61,10 +61,10 @@ const products = [
   {
     id: 2,
     name: "Avant-Garde Sculptural Dress",
-    price: 4299.99,
+    price: 12999,
     rating: 4.8,
     reviews: 189,
-    image: "/placeholder.svg?height=600&width=450",
+    image: "https://images.unsplash.com/photo-1572804013305-535a3d5be02a?auto=format&fit=crop&w=600&h=800&q=80",
     colors: ["obsidian", "platinum", "amethyst"],
     sizes: ["S", "M", "L", "XL"],
     isNew: false,
@@ -78,10 +78,10 @@ const products = [
   {
     id: 3,
     name: "Minimalist Zen Silhouette",
-    price: 1799.99,
+    price: 5499,
     rating: 4.7,
     reviews: 312,
-    image: "/placeholder.svg?height=600&width=450",
+    image: "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=600&h=800&q=80",
     colors: ["ivory", "sage", "terracotta"],
     sizes: ["XS", "S", "M", "L"],
     isNew: true,
@@ -95,11 +95,11 @@ const products = [
   {
     id: 4,
     name: "Deconstructed Power Dress",
-    price: 2299.99,
-    originalPrice: 2899.99,
+    price: 6999,
+    originalPrice: 8499,
     rating: 4.6,
     reviews: 156,
-    image: "/placeholder.svg?height=600&width=450",
+    image: "https://images.unsplash.com/photo-1543076447-215ad9ba6923?auto=format&fit=crop&w=600&h=800&q=80",
     colors: ["charcoal", "camel", "forest"],
     sizes: ["S", "M", "L", "XL", "XXL"],
     isNew: false,
@@ -113,10 +113,10 @@ const products = [
   {
     id: 5,
     name: "Bohemian Rhapsody Masterpiece",
-    price: 1999.99,
+    price: 5999,
     rating: 4.5,
     reviews: 203,
-    image: "/placeholder.svg?height=600&width=450",
+    image: "https://images.unsplash.com/photo-1536104968055-4d61aa56f46a?auto=format&fit=crop&w=600&h=800&q=80",
     colors: ["sunset", "ocean", "meadow"],
     sizes: ["XS", "S", "M", "L", "XL"],
     isNew: false,
@@ -130,10 +130,10 @@ const products = [
   {
     id: 6,
     name: "Neo-Gothic Cathedral Dress",
-    price: 3899.99,
+    price: 11999,
     rating: 4.8,
     reviews: 134,
-    image: "/placeholder.svg?height=600&width=450",
+    image: "https://images.unsplash.com/photo-1591369822091-8b550f27d4d3?auto=format&fit=crop&w=600&h=800&q=80",
     colors: ["raven", "burgundy", "gold"],
     sizes: ["S", "M", "L", "XL"],
     isNew: true,
@@ -415,11 +415,11 @@ export default function ProductListingPage() {
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <span className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                    ${product.price.toLocaleString()}
+                    {product.price.toLocaleString()} TND
                   </span>
                   {product.originalPrice && (
                     <span className="text-lg text-gray-500 line-through">
-                      ${product.originalPrice.toLocaleString()}
+                      {product.originalPrice.toLocaleString()} TND
                     </span>
                   )}
                 </div>
@@ -634,10 +634,10 @@ export default function ProductListingPage() {
                           />
                           <div className="flex justify-between text-sm text-gray-400 mt-4">
                             <span className="bg-gray-800 px-3 py-1 rounded-full">
-                              ${priceRange[0].toLocaleString()}
+                              {priceRange[0].toLocaleString()} TND
                             </span>
                             <span className="bg-gray-800 px-3 py-1 rounded-full">
-                              ${priceRange[1].toLocaleString()}
+                              {priceRange[1].toLocaleString()} TND
                             </span>
                           </div>
                         </div>

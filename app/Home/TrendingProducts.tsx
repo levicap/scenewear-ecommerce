@@ -8,9 +8,9 @@ const products = [
   {
     id: 1,
     name: "Obsidian Blazer",
-    price: 299.99,
-    originalPrice: 399.99,
-    image: "https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=400",
+  price: 950,
+  originalPrice: 1270,
+  image: "https://cdn.shopify.com/s/files/1/0680/4150/7113/files/obsidian-blazer.jpg?v=1690000001",
     rating: 4.9,
     reviews: 124,
     badge: "Hot",
@@ -20,8 +20,8 @@ const products = [
   {
     id: 2,
     name: "Ethereal Silk Dress",
-    price: 189.99,
-    image: "https://images.pexels.com/photos/1462637/pexels-photo-1462637.jpeg?auto=compress&cs=tinysrgb&w=400",
+  price: 600,
+  image: "https://cdn.shopify.com/s/files/1/0680/4150/7113/files/ethereal-silk-dress.jpg?v=1690000002",
     rating: 4.8,
     reviews: 98,
     badge: "New",
@@ -31,8 +31,8 @@ const products = [
   {
     id: 3,
     name: "Urban Minimalist Tee",
-    price: 79.99,
-    image: "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=400",
+  price: 250,
+  image: "https://cdn.shopify.com/s/files/1/0680/4150/7113/files/urban-minimalist-tee.jpg?v=1690000003",
     rating: 4.7,
     reviews: 156,
     badge: "Trending",
@@ -42,8 +42,8 @@ const products = [
   {
     id: 4,
     name: "Midnight Couture Gown",
-    price: 599.99,
-    image: "https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg?auto=compress&cs=tinysrgb&w=400",
+  price: 1900,
+  image: "https://cdn.shopify.com/s/files/1/0680/4150/7113/files/midnight-couture-gown.jpg?v=1690000004",
     rating: 5.0,
     reviews: 87,
     badge: "Luxury",
@@ -53,9 +53,9 @@ const products = [
   {
     id: 5,
     name: "Neo-Classic Sweater",
-    price: 149.99,
-    originalPrice: 199.99,
-    image: "https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=400",
+  price: 480,
+  originalPrice: 640,
+  image: "https://cdn.shopify.com/s/files/1/0680/4150/7113/files/neo-classic-sweater.jpg?v=1690000005",
     rating: 4.6,
     reviews: 203,
     badge: "Sale",
@@ -138,10 +138,10 @@ export function TrendingProducts() {
                     
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-2">
-                        <span className="text-xl font-bold text-white">${product.price}</span>
+                        <span className="text-xl font-bold text-white">{product.price} TND</span>
                         {product.originalPrice && (
                           <span className="text-sm text-zinc-500 line-through">
-                            ${product.originalPrice}
+                            {product.originalPrice} TND
                           </span>
                         )}
                       </div>
